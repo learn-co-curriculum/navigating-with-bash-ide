@@ -2,7 +2,7 @@
 
 ## Objectives
 
-1. Explain how the IDE mimics the behavior of the shell 
+1. Explain how the Learn IDE (Integrated Development Environment) mimics the behavior of the shell 
 2. Use `pwd` to identify the current directory of your IDE session
 3. Use `ls` to list the files in the current directory of your IDE session
 4. Use `cd` and `cd ..` to change directories of your  Nitrous Console session
@@ -16,9 +16,9 @@ When you open an application from your Finder or Desktop, it always happens from
 
 We're used to navigating and operating on these files using our GUI, our Graphical User Interface, provided by OS X (Macintosh) or whatever operating system we're using (Windows).
 
-The terminal in your IDE doesn't allow you to access the files on your computer, but it does let you access all the files that you load on to your IDE. In other words, you can access all the labs that you load on to the IDE from Learn. This terminal provides us with a Command Line Interface to navigate and operate on the files and folders in our IDE. As programmers, the Terminal is our workbench, not the GUI.
+The shell (or Terminal) in your IDE allows you to access all of the files associated with the code labs you're working through on Learn. This Terminal provides us with a Command Line Interface to navigate and operate on the files and folders in our IDE; this is sometimes faster and easier than using the GUI. 
 
-Let's learn to navigate the files and folders on your IDE using the following commands. These commands are standards for all terminals (not just for your IDE).
+Let's learn to navigate the files and folders on your IDE's Terminal using the following commands. These commands are standards for all shells (not just for your IDE).
 
 ## `pwd` and Working Directories
 
@@ -72,32 +72,29 @@ You never need to guess, if you're ever curious where you are or need to confirm
 
 ## `code` - Your Home Directory
 
-When you open a new Terminal session, you start in a default location in your file system.
+When you signed up for Learn, we created a new workspace for you (labeled with your Github username) and a default directory called `code`, which is where all of your code will live. 
 
-
-'/' means the main directory of your IDE. Every file and folder on your computer lives somewhere inside of `/`.
-
-`/home` is the main  directory in the IDE. Within `/Users`, there is a folder for your username, the name of the Github account you used to login to your IDE. In this case, the username is `AnnJohn` so the home directory is: `/home/AnnJohn/code`. Yours will be different and you can see it by opening a new Terminal session and typing `pwd`.
-
-`code` is the default directory in the IDE, whatever it may be. 
+So that's what you're seeing when you see the directory `/home/AnnJohn/code`(here the user's name is AnnJohn, yours will be different!
 
 ## `ls` - Listing Files in a Directory
 
-Within a directory, one thing you're probably curious about is "what files are in this directory?". You can list files within your working directory by executing `ls`:
+Within a directory, one thing you're probably curious about is "what files or other directories are contained here?". You can list evertying in your working directory by executing `ls`:
 
 ```
-~ $ ls
-Applications  Development   Desktop
-Documents     Downloads     Public        		    
+[16:20:13] code
+// ♥ ls
+labs
+[16:20:13] code
+// ♥ 
 ```
 
-When we type `ls` in Terminal, we're asking our Terminal to list the files and folders in the current working directory.
+When we type `ls` in Terminal, we're asking our Terminal to list the files and folders in the current working directory. 
 
-In my home directory, `code`, there are 6 directories, `Applications`, `Development`, `Desktop`, `Documents`, `Downloads`, and `Public`. The directories you have in the IDE will only be the labs that you've downloaded on there. 
+In the example above, typing `ls` in the `code` directory, shows you there's another directory called `labs` contained within it. When you start solving code labs very soon, this is where they'll be stored.
 
 ## `cd` - Changing Directories
 
-When you open a new Terminal session, you'll be in a working directory, probably `code`. But how do we move around to other directories and change our working directory? You can use the `cd` command, which stands for Change Directory.
+Now that you know how to print your working directory and see what's contained within it, you may be wondering: how do we move around to other directories and change our working directory? The answer is: with the `cd` command, which stands for Change Directory.
 
 From the `code` directory, try:
 
@@ -107,9 +104,7 @@ From the `code` directory, try:
 // ♥
 ```
 
-From within `code`, at our prompt `♥`, we type `cd labs`. Our terminal will change the directory and enter our `labs` folder and our prompt will now indicate that our working directory is `code/labs`. Your prompt might look a little different but you'll be in your `Desktop` directory. Confirm with: `pwd`. `pwd` should output something like: `/home/AnnJohn/code/labs`, the full path to your labs directory.
-
-Once your working directory is labs, try `ls` and have your Terminal list any files that are in that directory.
+From within `code`, at our prompt `♥`, we type `cd labs`. Our terminal will change the directory and enter our `labs` folder and our prompt will now indicate that our working directory is `code/labs`. It's that simple. Confirm with: `pwd`. `pwd` should output something like: `/home/AnnJohn/code/labs`, the full path to your labs directory.
 
 ### `..` and `.`
 
@@ -124,14 +119,10 @@ How do you move from `labs` back up to your `code` directory? You can always mov
 
 In the same manner that `..` means the directory above, the shortcut `.` means the current directory. You'll see why being able to refer to your current directory as `.` is helpful in a minute.
 
-### cd `~`
-
-You can also change directory back to your home directory from anywhere via `cd ~`.  `~` is a shortcut that means home so if you type `cd ~` you are telling your terminal to change the working directory to your home directory. Try it now.
-
-Then enter `ls` and you'll see the `code` directory. Go ahead and `cd` back into it. 
-
 ### Hint: Tab Autocomplete
 
 When you're in Terminal, to autocomplete a directory or a command, start typing and then press TAB.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/navigating-with-bash-ide'>Navigating with BASH IDE</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/navigating-with-bash-ide'>Navigating with BASH </a> on Learn.co and start learning to code for free.</p>
