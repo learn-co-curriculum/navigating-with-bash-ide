@@ -5,7 +5,7 @@
 1. Explain how the Learn IDE (Integrated Development Environment) mimics the behavior of the shell 
 2. Use `pwd` to identify the current directory of your IDE session
 3. Use `ls` to list the files in the current directory of your IDE session
-4. Use `cd` and `cd ..` to change directories of your  Nitrous Console session
+4. Use `cd` and `cd ..` to change directories in your IDE session. 
 
 
 ## Overview
@@ -37,7 +37,7 @@ Our Command Line prompt, and maybe yours if you configured your environment thro
 // ♥
 ```
 
-The first line, `[16:19:43] code` is telling us the current time, so expect that part to be different for you, and our current working directory, `code`. (This is different our Home directory which we'll explain later in this lesson.)
+The first line, `[16:19:43] code` is telling us the current time, so expect that part to be different for you, and our current working directory, `code`. (This is different than our Home directory which we'll explain later in this lesson.)
 
 The next line, `// ♥` is our command line prompt, where we can type instructions and commands for our computer to execute. `// ♥` is a customized prompt that you got by setting up your environment through Learn. To us the symbols `// ♥` remind us of the way, '//', of love, '♥'. That's our mantra when we're programming. And we think it looks pretty cool given how much time we spend in our Terminal.
 
