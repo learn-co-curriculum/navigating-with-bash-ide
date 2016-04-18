@@ -5,26 +5,26 @@
 1. Explain how the Learn IDE (Integrated Development Environment) mimics the behavior of the shell 
 2. Use `pwd` to identify the current directory of your IDE session
 3. Use `ls` to list the files in the current directory of your IDE session
-4. Use `cd` and `cd ..` to change directories of your  Nitrous Console session
+4. Use `cd` and `cd ..` to change directories in your IDE session. 
 
 
 ## Overview
 
-When you open a file on your computer, you locate it by navigating through the directories on your computer's file system using Finder. Even files on your Desktop that you click on are stored in your computer's file system, your hard drive.
+When you open a file on your computer, you locate it by navigating through the directories on your computer's file system using Finder. Even files on your Desktop that you click on are stored in your computer's file system.
 
 When you open an application from your Finder or Desktop, it always happens from the context of a "Working Directory" - the directory of your computer you were in when you executed the program. When you click on a file on your Desktop or Open an application from Your Dock or Applications directory, you are still opening a file in a directory. The Dock and Desktop are just abstractions for that directory to make them easy to access.
 
-We're used to navigating and operating on these files using our GUI, our Graphical User Interface, provided by OS X (Macintosh) or whatever operating system we're using (Windows).
+We're used to navigating and operating on these files using our GUI, our Graphical User Interface, provided by OS X (Macintosh) or whatever operating system we're using (e.g. Windows).
 
-The shell (or Terminal) in your IDE allows you to access all of the files associated with the code labs you're working through on Learn. This Terminal provides us with a Command Line Interface to navigate and operate on the files and folders in our IDE; this is sometimes faster and easier than using the GUI. 
+The shell (or Terminal) in your IDE allows you to access all of the files associated with the code labs you're working through on Learn. This Terminal provides you with a Command Line Interface to navigate and operate on the files and folders in the IDE. This is often faster and easier than using the GUI. 
 
 Let's learn to navigate the files and folders on your IDE's Terminal using the following commands. These commands are standards for all shells (not just for your IDE).
 
 ## `pwd` and Working Directories
 
-When you open the IDE, your Terminal is open to a location within a directory of the file system. Whatever programs you execute or work you do in your Terminal, that action happens in the context of a "Working Directory."
+When you open the IDE, your Terminal is open to a particular directory of the file system. When you execute a program or do other work in your Terminal, you're doing so in the context of a "Working Directory."
 
-A "Working Directory" just means wherever on your IDE you are when you execute a program by running a command in your Terminal like `learn hello`. You did that from somewhere. We call that somewhere, wherever you currently are, a "Working Directory".
+A "Working Directory" just means wherever on your IDE's file system you are when you run a command in your Terminal like `learn hello`. You did that from somewhere. We call that somewhere, wherever you currently are, a "Working Directory".
 
 Open your IDE and in your terminal, you'll be at your Command Line prompt, where your computer is waiting for instructions.
 
@@ -37,7 +37,7 @@ Our Command Line prompt, and maybe yours if you configured your environment thro
 // ♥
 ```
 
-The first line, `[16:19:43] code` is telling us the current time, so expect that part to be different for you, and our current working directory, `code`. (This is different our Home directory which we'll explain later in this lesson.)
+The first line, `[16:19:43] code` is telling us the current time (so expect that part to be different for you) and our current working directory, `code`. (This is different than our Home directory which we'll explain later in this lesson.)
 
 The next line, `// ♥` is our command line prompt, where we can type instructions and commands for our computer to execute. `// ♥` is a customized prompt that you got by setting up your environment through Learn. To us the symbols `// ♥` remind us of the way, '//', of love, '♥'. That's our mantra when we're programming. And we think it looks pretty cool given how much time we spend in our Terminal.
 
@@ -117,7 +117,7 @@ How do you move from `labs` back up to your `code` directory? You can always mov
 
 `labs` is within `code`. From within `labs`, you would refer to the parent directory, `code` as `..`.
 
-In the same manner that `..` means the directory above, the shortcut `.` means the current directory. You'll see why being able to refer to your current directory as `.` is helpful in a minute.
+In the same manner that `..` means the directory above, the shortcut `.` means the current directory. You'll see why being able to refer to your current directory as `.` is helpful in a minute. (!!! Test PR from Faiyam to see if my commits are auto-merged)
 
 ### Hint: Tab Autocomplete
 
