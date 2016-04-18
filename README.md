@@ -117,7 +117,7 @@ How do you move from `labs` back up to your `code` directory? You can always mov
 
 `labs` is within `code`. From within `labs`, you would refer to the parent directory, `code` as `..`.
 
-In the same manner that `..` means the directory above, the shortcut `.` means the current directory. You'll see why being able to refer to your current directory as `.` is helpful in a minute.
+In the same manner that `..` means the directory above, the shortcut `.` means the current directory. You'll see why being able to refer to your current directory as `.` is helpful in a minute. (!!! Test PR from Faiyam to see if my commits are auto-merged)
 
 ### Hint: Tab Autocomplete
 
