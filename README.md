@@ -10,13 +10,13 @@
 
 ## Overview
 
-When you open a file on your computer, you locate it by navigating through the directories on your computer's file system using Finder. Even files on your Desktop that you click on are stored in your computer's file system, your hard drive.
+When you open a file on your computer, you locate it by navigating through the directories on your computer's file system using Finder. Even files on your Desktop that you click on are stored in your computer's file system.
 
 When you open an application from your Finder or Desktop, it always happens from the context of a "Working Directory" - the directory of your computer you were in when you executed the program. When you click on a file on your Desktop or Open an application from Your Dock or Applications directory, you are still opening a file in a directory. The Dock and Desktop are just abstractions for that directory to make them easy to access.
 
-We're used to navigating and operating on these files using our GUI, our Graphical User Interface, provided by OS X (Macintosh) or whatever operating system we're using (Windows).
+We're used to navigating and operating on these files using our GUI, our Graphical User Interface, provided by OS X (Macintosh) or whatever operating system we're using (e.g. Windows).
 
-The shell (or Terminal) in your IDE allows you to access all of the files associated with the code labs you're working through on Learn. This Terminal provides us with a Command Line Interface to navigate and operate on the files and folders in our IDE; this is sometimes faster and easier than using the GUI. 
+The shell (or Terminal) in your IDE allows you to access all of the files associated with the code labs you're working through on Learn. This Terminal provides you with a Command Line Interface to navigate and operate on the files and folders in the IDE. This is often faster and easier than using the GUI. 
 
 Let's learn to navigate the files and folders on your IDE's Terminal using the following commands. These commands are standards for all shells (not just for your IDE).
 
