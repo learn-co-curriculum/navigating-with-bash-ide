@@ -10,11 +10,11 @@
 
 ## Overview
 
-When you open a file on your computer, you locate it by navigating through the directories on your computer's file system using Finder. Even files on your Desktop that you click on are stored in your computer's file system.
+When you open a file on your computer, you locate it by navigating through the directories on your computer's file system using Finder. Even files on your Desktop are stored in your computer's file system.
 
 When you open an application from your Finder or Desktop, it always happens from the context of a "Working Directory" - the directory of your computer you were in when you executed the program. When you click on a file on your Desktop or Open an application from Your Dock or Applications directory, you are still opening a file in a directory. The Dock and Desktop are just abstractions for that directory to make them easy to access.
 
-We're used to navigating and operating on these files using our GUI, our Graphical User Interface, provided by OS X (Macintosh) or whatever operating system we're using (e.g. Windows).
+We're used to navigating and operating on these files using our GUI, or Graphical User Interface, provided by OS X (Macintosh) or whatever operating system we're using (e.g. Windows).
 
 The shell (or Terminal) in your IDE allows you to access all of the files associated with the code labs you're working through on Learn. This Terminal provides you with a Command Line Interface to navigate and operate on the files and folders in the IDE. This is sometimes faster and easier than using the GUI. 
 
@@ -24,7 +24,7 @@ Let's learn to navigate the files and folders on your IDE's Terminal using the f
 
 When you open the IDE, your Terminal is open to a particular directory of the file system. When you execute a program or do other work in your Terminal, that action happens in the context of a "Working Directory."
 
-A "Working Directory" just means wherever on your IDE's file system you are when you execute a program by running a command in your Terminal like `learn hello`. You did that from somewhere. We call that somewhere, wherever you currently are, a "Working Directory".
+A "Working Directory" just means wherever on you are on your IDE's file system when you run a command in your Terminal like `learn hello`. You did that from somewhere. We call that somewhere, wherever you currently are, a "Working Directory".
 
 Open your IDE and in your terminal, you'll be at your Command Line prompt, where your computer is waiting for instructions.
 
@@ -60,13 +60,13 @@ Type `pwd` from your prompt. You should see something like:
 // ♥
 ```
 
-Here we typed `pwd` and pressed Enter on my keyboard. The terminal responded with `/home/AnnJohn/code` and returned me to my current directory, `code` and gave use a new prompt, `♥`.
+Here we typed `pwd` and pressed Enter on my keyboard. The terminal responded with `/home/AnnJohn/code` and returned me to my current directory, `code` and gave me a new prompt, `♥`.
 
 That's the standard procedure when you execute anything in Terminal. You enter a command from a prompt in a working directory, see output, and are returned to a new prompt in your working directory.
 
 The `pwd` command is an acronym for "Print Working Directory." The `pwd` command prints the working directory of your Terminal session, the folder you are currently "in."
 
-Knowing what directory you are working within is crucial when using your Terminal. You are opening files and running programs that live in directories and you need to make sure you're in the right directory for your task.
+Knowing which directory you are working within is crucial when using your Terminal. You are opening files and running programs that live in directories and you need to make sure you're in the right directory for your task.
 
 You never need to guess, if you're ever curious where you are or need to confirm you are where you think you are, type `pwd`.
 
@@ -74,11 +74,11 @@ You never need to guess, if you're ever curious where you are or need to confirm
 
 When you signed up for Learn, we created a new workspace for you (labeled with your Github username) and a default directory called `code`, which is where all of your code will live. 
 
-So that's what you're seeing when you see the directory `/home/AnnJohn/code`(here the user's name is AnnJohn, yours will be different!
+So that's what you're seeing when you see the directory `/home/AnnJohn/code`(here the user's name is AnnJohn, yours will be different!)
 
 ## `ls` - Listing Files in a Directory
 
-Within a directory, one thing you're probably curious about is "what files or other directories are contained here?". You can list evertying in your working directory by executing `ls`:
+Within a directory, one thing you're probably curious about is "which files or other directories are contained here?". You can list evertying in your working directory by executing `ls`:
 
 ```
 [16:20:13] code
@@ -90,11 +90,11 @@ labs
 
 When we type `ls` in Terminal, we're asking our Terminal to list the files and folders in the current working directory. 
 
-In the example above, typing `ls` in the `code` directory, shows you there's another directory called `labs` contained within it. When you start solving code labs very soon, this is where they'll be stored.
+In the example above, typing `ls` in the `code` directory shows you there's another directory called `labs` contained within it. When you start solving code labs very soon, this is where they'll be stored.
 
 ## `cd` - Changing Directories
 
-Now that you know how to print your working directory and see what's contained within it, you may be wondering: how do we move around to other directories and change our working directory? The answer is: with the `cd` command, which stands for Change Directory.
+Now that you know how to print your working directory and see what's contained within it, you may be wondering: how do we move around to other directories and change our working directory? The answer is with the `cd` command, which stands for Change Directory.
 
 From the `code` directory, try:
 
