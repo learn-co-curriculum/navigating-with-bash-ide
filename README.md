@@ -78,7 +78,7 @@ So that's what you're seeing when you see the directory `/home/AnnJohn/code`(her
 
 ## `ls` - Listing Files in a Directory
 
-Within a directory, one thing you're probably curious about is "which files or other directories are contained here?". You can list evertying in your working directory by executing `ls`:
+Within a directory, one thing you're probably curious about is "which files or other directories are contained here?". You can list everything in your working directory by executing `ls`:
 
 ```
 [16:20:13] code
