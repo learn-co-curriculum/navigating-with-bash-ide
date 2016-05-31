@@ -123,8 +123,4 @@ In the same manner that `..` means the directory above, the shortcut `.` means t
 
 When you're in Terminal, to autocomplete a directory or a command, start typing and then press TAB.
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/navigating-with-bash-ide'>Navigating with BASH IDE</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/navigating-with-bash-ide'>Navigating with BASH </a> on Learn.co and start learning to code for free.</p>
-
 <p class='util--hide'>View <a href='https://learn.co/lessons/navigating-with-bash-ide'>Navigating with BASH </a> on Learn.co and start learning to code for free.</p>
