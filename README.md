@@ -24,7 +24,7 @@ Let's learn to navigate the files and folders on your IDE's Terminal using the f
 
 When you open the IDE, your Terminal is open to a particular directory of the file system. When you execute a program or do other work in your Terminal, that action happens in the context of a "Working Directory."
 
-A "Working Directory" just means wherever on you are on your IDE's file system when you run a command in your Terminal like `learn hello`. You did that from somewhere. We call that somewhere, wherever you currently are, a "Working Directory".
+A "Working Directory" just means wherever you are on your IDE's file system when you run a command in your Terminal like `learn hello`. You did that from somewhere. We call that somewhere, wherever you currently are, a "Working Directory".
 
 Open your IDE and in your terminal, you'll be at your Command Line prompt, where your computer is waiting for instructions.
 
