@@ -18,6 +18,8 @@ We're used to navigating and operating on these files using our GUI, or Graphica
 
 The shell (or Terminal) in your IDE allows you to access all of the files associated with the code labs you're working through on Learn. This Terminal provides you with a Command Line Interface to navigate and operate on the files and folders in the IDE.
 
+![IDETerminal](https://s3.amazonaws.com/learn-verified/ILE-Console.png)
+
 Let's learn to navigate the files and folders on your IDE's Terminal using the following commands. These commands are standards for all shells (not just for your IDE).
 
 ## `pwd` and Working Directories
