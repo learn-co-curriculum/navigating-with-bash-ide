@@ -18,8 +18,6 @@ We're used to navigating and operating on these files using our GUI, or Graphica
 
 The shell (or Terminal) in your IDE allows you to access all of the files associated with the code labs you're working through on Learn. This Terminal provides you with a Command Line Interface to navigate and operate on the files and folders in the IDE.
 
-TODO: Screenshot full IDE to show shell
-
 Let's learn to navigate the files and folders on your IDE's Terminal using the following commands. These commands are standards for all shells (not just for your IDE).
 
 ## `pwd` and Working Directories
@@ -51,7 +49,7 @@ What can you do from a command line prompt? Everything and anything. A command l
 
 ### `pwd` - Print Working Directory
 
-Let's run the following command line program.
+How do we know which directory our terminal is in? Let's run the following command line program.
 
 Type `pwd` from your prompt. You should see something like:
 
@@ -124,5 +122,19 @@ In the same manner that `..` means the directory above, the shortcut `.` means t
 ### Hint: Tab Autocomplete
 
 When you're in Terminal, to autocomplete a directory or a command, start typing and then press TAB.
+
+## Key Terms
+
+- Working Directory
+- GUI
+- Terminal
+- Command Line prompt
+- `pwd`
+- Home Directory
+- `ls`
+- `cd`
+- `cd ..`
+
+
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/navigating-with-bash-ide'>Navigating with BASH </a> on Learn.co and start learning to code for free.</p>
