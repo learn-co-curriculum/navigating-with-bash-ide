@@ -4,42 +4,42 @@
 
 As a developer, you spend a lot of time on your computer. You've already learned about how the shell allows you to interact with your computer on a more granular level. Right now, when you open a file on your computer, you locate it by navigating through the directories on your computer's file system using Finder (Mac) or File Explorer (Windows). Every file on your computer is stored in your computer's file system, including files on your Desktop.
 
-When you open an application, it always happens from the context of a "Working Directory" - the directory of your computer you were in when you executed the program. This working directory could be your Desktop, an Application folder, or a hidden directory that you can't see by default. When you click on a file on your Desktop or open an application from Your Dock or Applications directory, you are still opening a file in a directory. The Dock and Desktop are just abstractions for that directory to make them easy to access.
+In previous lessons we stated that the terminal (or shell) was just another way of working with the files and directories in your development environment. You might be thinking: "Wait, how is this black screen with a command prompt anything like the Finder or Windows Explorer I've been using for years?" In this lesson we're going to show you how to translate tasks you've normally done outside of the terminal to inside the terminal.
 
-We're used to navigating and operating on these files using our GUI, or Graphical User Interface, provided by any operating system we are using (e.g. OS or Windows).
+A note about terminology: you might see many different words that refer to the black box portion in the lower right-hand section of the IDE. It can be called a shell, BASH, command line, command prompt, console, or terminal. These are all valid ways to describe this way of interacting with your environment. At Learn, we will refer to it as a `terminal`, but if you see those other words and phrases elsewhere, you'll know what they refer to.
 
-The shell (or Terminal) in your IDE allows you to access all of the files associated with the code labs you're working through on Learn. This Terminal provides you with a Command Line Interface to navigate and operate on the files and folders in the IDE.
+![IDEterminal](https://s3.amazonaws.com/learn-verified/ILE-Console.png)
 
-![IDETerminal](https://s3.amazonaws.com/learn-verified/ILE-Console.png)
+The terminal in your IDE allows you to access all of the files associated with the code labs you're working through on Learn. This terminal provides you with a Command Line Interface to navigate and operate on the files and folders in the IDE.
 
-Let's learn to navigate the files and folders on your IDE's Terminal using the following commands. These commands are standards for all shells (not just for your IDE).
+Let's learn to navigate the files and folders on your IDE's terminal using the following commands. These commands are standards for all terminals (not just for your IDE).
 
 ## Objectives
 
-1. Use `pwd` to identify the current directory of your IDE session
-2. Use `ls` to list the files in the current directory of your IDE session
-3. Use `cd` and `cd ..` to change directories in your IDE session.
+1. Use `pwd` to identify the current directory of your terminal.
+2. Use `ls` to list the files in the current directory of your terminal.
+3. Use `cd` and `cd ..` to change directories in your terminal.
 
-## Using `pwd` to identify the current directory of your IDE session
+## Using `pwd` to identify the current directory of your terminal
 
-When you open the IDE, your Terminal is open to a particular directory of the file system. When you execute a program or do other work in your Terminal, that action happens in the context of a "Working Directory."
+When you open the IDE, your terminal is open to a particular directory of the file system. When you execute a program or do other work in your terminal, that action happens in the context of a folder, or "directory".
 
-A "Working Directory" just means wherever you are on your IDE's file system when you run a command in your Terminal like `learn hello`. You did that from somewhere. We call that somewhere, wherever you currently are, a "Working Directory".
+This directory refers wherever you are on your IDE's file system when you run a command in your terminal like `learn hello`. You did that from somewhere. This somewhere is your current directory.
 
-Open your IDE and in your Terminal, you'll be at your Command Line prompt, where your computer is waiting for instructions.
+Open your IDE and in your terminal, you'll be at your Command Line prompt, where your computer is waiting for instructions.
 
 ### What's a Command Line Prompt?
 
-Our Command Line prompt, and maybe yours if you configured your environment through Learn, is represented by:
+Click on the Sandbox button in the upper right-hand corner of the lesson. This will bring up a test environment where you can try out new commands and concepts as you move through the course. Here, our command line prompt is represented by:
 
 ```
-[16:19:43] code
+[16:19:43] (master) Development
 // ♥
 ```
 
-The first line, `[16:19:43] code` is telling us the current time, so expect that part to be different for you, and our current working directory, `code`. (This is different from our Home directory, which we'll explain later in this lesson.)
+The first line, `[16:19:43] (master) Development` is telling us the current time, our current Git branch (master), and our current directory, `Development`. 
 
-The next line, `// ♥` is our command line prompt, where we can type instructions and commands for our computer to execute. `// ♥` is a customized prompt that you got by setting up your environment through Learn. To us the symbols `// ♥` remind us of the way, '//', of love, '♥'. That's our mantra when we're programming. And we think it looks pretty cool given how much time we spend in our Terminal.
+The next line, `// ♥` is our command line prompt, where we can type instructions and commands for our computer to execute. `// ♥` is a customized prompt that we use here at Learn. To us the symbols `// ♥` remind us of the way, '//', of love, '♥'. That's our mantra when we're programming. And we think it looks pretty cool given how much time we spend in our terminal.
 
 More generally, the command line prompt is represented by a `$`.
 
@@ -51,86 +51,81 @@ What can you do from a command line prompt? Everything and anything. A command l
 
 How do we know which directory our terminal is in? Let's run the following command line program.
 
-Type `pwd` from your prompt. You should see something like:
+Type `pwd` and press Enter in your terminal in your Sandbox. You should see something like:
 
 ```
 // ♥ pwd
-/home/AnnJohn/code
-[16:19:43] code
+/home/cjbrock/Development
+[16:19:43] (master) Development
 // ♥
 ```
 
-Here we typed `pwd` and pressed Enter on my keyboard. The Terminal responded with `/home/AnnJohn/code` and returned me to my current directory, `code` and gave me a new prompt, `♥`.
+Here we typed `pwd` and pressed Enter on my keyboard. The terminal responded with `/home/cjbrock/Development` and returned me to my current directory, `Development` and gave me a new prompt, `♥`.
 
-That's the standard procedure when you execute anything in Terminal. You enter a command from a prompt in a working directory, see output, and are returned to a new prompt in your working directory.
+That's the standard procedure when you execute anything in terminal. You enter a command from a prompt in a directory, see output, and are returned to a new prompt in your directory.
 
-The `pwd` command is an acronym for "Print Working Directory." The `pwd` command prints the working directory of your Terminal session, the folder you are currently "in."
+The `pwd` command is an acronym for "Print Working Directory." The `pwd` command prints the working directory of your terminal session, the folder you are currently "in."
 
-Knowing which directory you are working within is crucial when using your Terminal. You are opening files and running programs that live in directories and you need to make sure you're in the right directory for your task.
+Knowing which directory you are working within is crucial when using your terminal. You are opening files and running programs that live in directories and you need to make sure you're in the right directory for your task.
 
 You never need to guess, if you're ever curious where you are or need to confirm you are where you think you are, type `pwd`.
 
-### `code` - Your Home Directory
+## Using `ls` to list the files in the current directory of your terminal.
 
-When you signed up for Learn, we created a new workspace for you (labeled with your Github username) and a default directory called `code`, which is where all of your code will live.
-
-So that's what you're seeing when you see the directory `/home/AnnJohn/code`(here the user's name is AnnJohn, yours will be different!)
-
-## Using `ls` to list the files in the current directory of your IDE session
-
-Within a directory, one thing you're probably curious about is "which files or other directories are contained here?". You can list everything in your working directory by executing `ls`:
+Within a directory, one thing you're probably curious about is "which files or other directories are contained here?". You can list everything in your directory by executing `ls`:
 
 ```
-[16:20:13] code
+[16:20:13] (master) Development
 // ♥ ls
-labs
-[16:20:13] code
+README.md
+[16:20:13] (master) Development
 // ♥
 ```
 
-When we type `ls` in Terminal, we're asking our Terminal to list the files and folders in the current working directory.
+When we type `ls` in terminal, we're asking our terminal to list the files and folders in the current working directory.
 
-In the example above, typing `ls` in the `code` directory shows you there's another directory called `labs` contained within it. When you start solving code labs very soon, this is where they'll be stored.
+In the example above, typing `ls` in the `Development` directory shows you there's a file named `README.md` contained within it.
 
-## Using `cd` and `cd ..` to change directories in your IDE session.
+## Using `cd` and `cd ..` to change directories in your terminal.
 
-Now that you know how to print your working directory and see what's contained within it, you may be wondering: how do we move around to other directories and change our working directory? The answer is with the `cd` command, which stands for Change Directory.
+Now that you know how to print your current directory and see what's contained within it, you may be wondering: how do we move around to other directories and change our directory? The answer is with the `cd` command, which stands for Change Directory.
 
-From the `code` directory, try:
+Try the following:
+1. In your sandbox, click on the "Create New" button in the lower left-hand corner. 
+2. Choose the "Folder" option.
+3. Name your folder `test`.
+4. Now, from the `Development` directory, try:
 
 ```
-// ♥ cd labs
-[16:19:43] labs
+// ♥ cd test
+[16:19:43] test
 // ♥
 ```
 
-From within `code`, at our prompt `♥`, we type `cd labs`. Our Terminal will change the directory and enter our `labs` folder and our prompt will now indicate that our working directory is `code/labs`. It's that simple. Confirm with: `pwd`. `pwd` should output something like: `/home/AnnJohn/code/labs`, the full path to your labs directory.
+From within `Development`, at our prompt `♥`, we type `cd test`. Our terminal will change the directory and enter our `test` folder and our prompt will now indicate that our working directory is `Development/test`. It's that simple. Confirm with: `pwd`. `pwd` should output something like: `/home/cjbrock/Development/test`, the full path to your test directory.
 
 ### `..` and `.`
 
-How do you move from `labs` back up to your `code` directory? You can always move out of the current folder and back into the parent folder by typing `cd ..`.  `..` is a shortcut that always means "the directory above" or the "parent directory" of the current. Your file system is a tree like structure, with directories being inside other directories:
+How do you move from `test` back up to your `Development` directory? You can always move out of the current folder and back into the parent folder by typing `cd ..`.  `..` is a shortcut that always means "the directory above" or the "parent directory" of the current. Your file system is a tree like structure, with directories being inside other directories:
 
 ```
-├── code
-    ├── labs
+├── Development
+    ├── test
 ```
 
-`labs` is within `code`. From within `labs`, you would refer to the parent directory, `code` as `..`.
+`test` is within `Development`. From within `test`, you would refer to the parent directory, `Development` as `..`.
 
-In the same manner that `..` means the directory above, the shortcut `.` means the current directory. You'll see why being able to refer to your current directory as `.` is helpful in a minute.
+In the same manner that `..` means the directory above, the shortcut `.` means the current directory. You'll see why being able to refer to your current directory as `.` is helpful later in the course.
 
 ### Hint: Tab Autocomplete
 
-When you're in Terminal, to autocomplete a directory or a command, start typing and then press TAB.
+When you're in terminal, to autocomplete a directory or a command, start typing and then press TAB.
 
 ## Key Terms
 
-- Working Directory
-- GUI
-- Terminal
+- terminal
 - Command Line prompt
 - `pwd`
-- Home Directory
 - `ls`
 - `cd`
 - `cd ..`
