@@ -1,14 +1,6 @@
 ## Navigating with BASH
 
-## Objectives
-
-1. Explain how the Learn IDE (Integrated Development Environment) mimics the behavior of the shell
-2. Use `pwd` to identify the current directory of your IDE session
-3. Use `ls` to list the files in the current directory of your IDE session
-4. Use `cd` and `cd ..` to change directories in your IDE session.
-
-
-## Overview
+## Problem statement
 
 As a developer, you spend a lot of time on your computer. You've already learned about how the shell allows you to interact with your computer on a more granular level. Right now, when you open a file on your computer, you locate it by navigating through the directories on your computer's file system using Finder (Mac) or File Explorer (Windows). Every file on your computer is stored in your computer's file system, including files on your Desktop.
 
@@ -22,7 +14,13 @@ The shell (or Terminal) in your IDE allows you to access all of the files associ
 
 Let's learn to navigate the files and folders on your IDE's Terminal using the following commands. These commands are standards for all shells (not just for your IDE).
 
-## `pwd` and Working Directories
+## Objectives
+
+1. Use `pwd` to identify the current directory of your IDE session
+2. Use `ls` to list the files in the current directory of your IDE session
+3. Use `cd` and `cd ..` to change directories in your IDE session.
+
+## Using `pwd` to identify the current directory of your IDE session
 
 When you open the IDE, your Terminal is open to a particular directory of the file system. When you execute a program or do other work in your Terminal, that action happens in the context of a "Working Directory."
 
@@ -30,7 +28,7 @@ A "Working Directory" just means wherever you are on your IDE's file system when
 
 Open your IDE and in your Terminal, you'll be at your Command Line prompt, where your computer is waiting for instructions.
 
-## What's a Command Line Prompt?
+### What's a Command Line Prompt?
 
 Our Command Line prompt, and maybe yours if you configured your environment through Learn, is represented by:
 
@@ -72,13 +70,13 @@ Knowing which directory you are working within is crucial when using your Termin
 
 You never need to guess, if you're ever curious where you are or need to confirm you are where you think you are, type `pwd`.
 
-## `code` - Your Home Directory
+### `code` - Your Home Directory
 
 When you signed up for Learn, we created a new workspace for you (labeled with your Github username) and a default directory called `code`, which is where all of your code will live.
 
 So that's what you're seeing when you see the directory `/home/AnnJohn/code`(here the user's name is AnnJohn, yours will be different!)
 
-## `ls` - Listing Files in a Directory
+## Using `ls` to list the files in the current directory of your IDE session
 
 Within a directory, one thing you're probably curious about is "which files or other directories are contained here?". You can list everything in your working directory by executing `ls`:
 
@@ -94,7 +92,7 @@ When we type `ls` in Terminal, we're asking our Terminal to list the files and f
 
 In the example above, typing `ls` in the `code` directory shows you there's another directory called `labs` contained within it. When you start solving code labs very soon, this is where they'll be stored.
 
-## `cd` - Changing Directories
+## Using `cd` and `cd ..` to change directories in your IDE session.
 
 Now that you know how to print your working directory and see what's contained within it, you may be wondering: how do we move around to other directories and change our working directory? The answer is with the `cd` command, which stands for Change Directory.
 
