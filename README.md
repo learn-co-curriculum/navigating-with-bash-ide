@@ -1,9 +1,9 @@
-## Navigating with BASH
+## Navigating the Terminal
 
 ## Problem statement
 
 As a developer, you spend a lot of time on your computer. You've already
-learned about how the shell allows you to interact with your computer on a more
+learned about how the terminal allows you to interact with your computer on a more
 granular level. Right now, when you open a file on your computer, you locate it
 by navigating through the directories on your computer's file system using
 Finder (Mac) or File Explorer (Windows). Every file on your computer is stored
