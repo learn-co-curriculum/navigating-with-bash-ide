@@ -5,7 +5,7 @@
 As a developer, you spend a lot of time on your computer. You've already
 learned about how the terminal allows you to interact with your computer on a more
 granular level. Right now, when you open a file on your computer, you locate it
-by navigating through the directories on your computer's file system using
+by navigating through the directories on your computer's file system using the
 Finder (Mac) or File Explorer (Windows). Every file on your computer is stored
 in your computer's file system, including files on your Desktop.
 
@@ -14,7 +14,7 @@ of working with the files and directories in your development environment. You
 might be thinking: "Wait, how is this black screen with a command prompt
 anything like the Finder or Windows Explorer I've been using for years?" In
 this lesson we're going to show you how to translate tasks you've normally done
-outside of the terminal to inside the terminal.
+in a windowed environment to the terminal.
 
 A note about terminology: you might see many different words that refer to the
 black box portion in the lower right-hand section of the IDE. It can be called
@@ -30,8 +30,8 @@ a "Command-Line Interface (CLI)" to navigate and operate on the files and
 folders in the IDE.
 
 Let's learn to navigate the files and folders on your IDE's terminal using the
-following commands: `pwd`, `ls`, and `cd`. These commands are standards for all
-terminals (not just for your IDE).
+following commands: `pwd`, `ls`, and `cd`. These commands are standards for almost 
+all terminals (not just for your IDE).
 
 ## Objectives
 
@@ -41,7 +41,7 @@ terminals (not just for your IDE).
 
 ## Use `pwd` To Identify The Current Directory Of Your Terminal
 
-When you open the IDE, your terminal is open to a particular directory of the
+When you open the IDE, your terminal is opened to a particular directory in the
 file system. When you execute a program or do other work in your terminal, that
 action happens in the context of a folder, or "directory".
 
@@ -74,7 +74,7 @@ The next line, `// ♥` is also part of our command line prompt, where we can
 type instructions and commands for our computer to execute. `// ♥` is a
 customized prompt that we use here at Learn. To us the symbols `// ♥` remind us
 of the way, '//', of love, '♥'. That's our mantra when we're programming. And
-we think it looks pretty cool given how much time we spend in our terminal.
+we think it looks pretty cool given how much time we spend in our terminals.
 
 More generally, the command line prompt is represented by a `$`.  If you've
 read other tutorials, you might be familiar with seeing command line
@@ -106,7 +106,7 @@ Here we typed `pwd` and pressed Enter on my keyboard. The terminal responded
 with `/home/cjbrock/Development` and returned me to my current directory,
 `Development` and gave me a new prompt, `♥`.
 
-That's the standard procedure when you execute anything in terminal. You enter
+That's the standard procedure when you execute anything in a terminal. You enter
 a command from a prompt in a directory, see output, and are returned to a new
 prompt in your directory.
 
